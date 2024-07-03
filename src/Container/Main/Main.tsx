@@ -1,3 +1,4 @@
+import './Main.scss'
 type Props = {}
 const Main = () => {
     return (

@@ -1,4 +1,6 @@
+import './Header.scss'
 import logo from '../../images/icon-round.webp'
+
 type Props = {}
 const Header = () => {
     return (

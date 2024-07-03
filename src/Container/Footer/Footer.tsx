@@ -1,3 +1,4 @@
+import './Footer.scss'
 import logo from '../../images/icon-round.webp'
 type Props = {}
 const Footer = () => {
