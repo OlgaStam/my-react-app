@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-
 import './css/style.css'
+import logo from '../src/images/icon-round.webp'
 
 const Header = () => {
     return (
@@ -13,7 +13,7 @@ const Header = () => {
                     <nav className="header-menu__container">
                         <div className="header-logo">
                             <a className="header-logo__link" href="/">
-                                <img src="icon-round.webp" />
+                                <img src={logo} />
                             </a>
                         </div>
                         <div className="header-navbar">
@@ -313,7 +313,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-logo">
                     <a className="cw td" href=" /">
-                        <img src="icon-round.webp" alt="re-re" />
+                        <img src={logo} />
                         <span>Бухгалтерська агенція "ЛЕВ"</span>
                     </a>
                     <span>Наш супровід - Ваш спокій</span>
