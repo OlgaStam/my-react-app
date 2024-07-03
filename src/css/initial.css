@@ -1,0 +1,167 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* 0.5);
+    padding-left: calc(var(--bs-gutter-x)* 0.5);
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+/* 
+@media (min-width: 992px) {
+
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .container-sm,
+    .container {
+        max-width: 540px;
+    }
+} */
+
+main>.container {
+    position: relative;
+    padding: 0 15px 20px;
+}
+
+@font-face {
+    font-family: 'Clear Sans Medium';
+    src: url('../css/clearsans_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Clear Sans Medium', sans-serif;
+}
+
+header {
+    margin-bottom: 120px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+a:hover,
+a:visited {
+    color: #409468;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.lev-bg {
+    background-color: #468966;
+}
+
+.lev-color {
+    color: #468966;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.td {
+    text-decoration: none;
+}
+
+.cw {
+    color: #ffffff;
+}
+
+.cw:hover {
+    color: #ffffff;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.site-error.md-top-20 {
+    margin-top: 100px;
+}
+
+.dn {
+    display: none;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.small-font {
+    font-family: GetVoIP Grotesque;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tf {
+    text-align: justify;
+    text-indent: 3em;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+i {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.breadcrumb {
+    padding-left: 20px;
+}
+
+.modal {
+    top: 10%;
+}
+
+.modal-open {
+    overflow: scroll !important;
+    padding-right: 0 !important;
+}
+
+.form-control:focus {
+    color: #468966;
+    border-color: #468966;
+    box-shadow: 0 0 0 0.25rem #46896640
+}

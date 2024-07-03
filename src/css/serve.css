@@ -1,0 +1,107 @@
+/* start serve page */
+.serve-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.serve-text__title {
+    font-size: 2.5rem;
+    line-height: 50px;
+    text-align: center;
+    color: #174b23;
+}
+
+.serve-text__title~p {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.site-about ul {
+    list-style-type: disc;
+    padding-left: 35px;
+    font-size: 30px;
+}
+
+.serve-round-image img {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+/* end serve page */
+@media(max-width: 767.8px) {
+
+    /* serve - media */
+    .serve-row {
+        padding: 0;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .serve-text-block {
+        z-index: 30;
+        padding: 20px;
+    }
+
+    .serve-row li {
+        font-size: 24px;
+    }
+
+    .serve-text__title {
+        font-size: 2.1rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .serve-text__title~p {
+        padding-top: 20px;
+    }
+
+    .serve-round-image {
+        display: none;
+    }
+
+
+    .bg-two_notebooks {
+        background-image: url(../images/serve/two-notebooks-round.webp);
+    }
+
+    .bg-codecs {
+        background-image: url(../images/serve/codecs-round.webp);
+    }
+
+    .bg-notebook {
+        background-image: url(../images/serve/notebook-round.webp);
+    }
+
+
+    .serve-bg {
+        position: relative;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        z-index: 10;
+        border-radius: 25px;
+        color: white;
+        background-size: 880px 880px;
+        background-position: center;
+        border: solid 5px #0A8000;
+        box-shadow: -3px 3px 20px -10px #397054;
+    }
+
+    .serve-bg::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        background-color: #7BA796;
+        z-index: 20;
+        opacity: 0.9;
+    }
+
+    /* end serve - media */
+}
