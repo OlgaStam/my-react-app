@@ -1,5 +1,8 @@
 import './Footer.scss'
 import logo from '../../images/icon-round.webp'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
+
 type Props = {}
 const Footer = () => {
     return (
@@ -19,6 +22,13 @@ const Footer = () => {
                         <i className="fa-solid fa-phone-volume"></i>
                         +38 (098) 607-33-04
                     </a>
+                    {/* <a className="phone cw td" href="tel:+380986073304">
+                        <FontAwesomeIcon
+                            icon={faPhoneVolume}
+                            className="fa-solid"
+                        /> 
+                        +38 (098) 607-33-04
+                    </a> */}
                     <a
                         className="mail cw td"
                         href="mailto:lev.buh.agency@gmail.com"
