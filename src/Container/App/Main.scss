@@ -1,0 +1,122 @@
+// main>.container {
+//     position: relative;
+//     padding: 0 15px 20px;
+// }
+
+@font-face {
+    font-family: 'Clear Sans Medium';
+    src: url('../../assets/clearsans_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Clear Sans Medium', sans-serif;
+}
+
+header {
+    margin-bottom: 120px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+a:hover,
+a:visited {
+    color: #409468;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.lev-bg {
+    background-color: #468966;
+}
+
+.lev-color {
+    color: #468966;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.cw {
+    color: #ffffff;
+}
+
+.cw:hover {
+    color: #ffffff;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.site-error.md-top-20 {
+    margin-top: 100px;
+}
+
+.dn {
+    display: none;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.small-font {
+    font-family: GetVoIP Grotesque;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tf {
+    text-align: justify;
+    text-indent: 3em;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+i {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.breadcrumb {
+    padding-left: 20px;
+}
+
+.modal {
+    top: 10%;
+}
+
+.modal-open {
+    overflow: scroll !important;
+    padding-right: 0 !important;
+}
+
+.form-control:focus {
+    color: #468966;
+    border-color: #468966;
+    box-shadow: 0 0 0 0.25rem #46896640
+}

@@ -1,5 +1,5 @@
 import './Header.scss'
-import logo from '../../images/icon-round.webp'
+import logo from '../../assets/logo.webp'
 
 type Props = {}
 const Header = () => {
