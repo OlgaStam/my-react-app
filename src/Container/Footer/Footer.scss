@@ -67,9 +67,16 @@
 }
 
 
-.footer a {
+.footer a,
+.footer a:visited,
+.footer a:hover {
     color: #fff;
 }
+
+// .footer a:hover {
+//     transform: scale(1.1);
+// }
+
 
 /* end footer*/
 @media(max-width: 767.8px) {
