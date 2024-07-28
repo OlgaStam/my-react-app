@@ -1,4 +1,8 @@
 import { Breadcrumbs, Container } from '@mui/material'
+import './Serve.scss'
+import twoNotebookRound from '../../assets/two-notebooks-round.webp'
+import notebookRound from '../../assets/notebook-round.webp'
+import codecsRound from '../../assets/codecs-round.webp'
 
 type Props = {}
 const serve = (props: Props) => {
@@ -23,7 +27,7 @@ const serve = (props: Props) => {
                         </div>
                         <div className="serve-round-image">
                             <img
-                                src="two-notebooks-round.webp"
+                                src={twoNotebookRound}
                                 alt="two-notebooks-round"
                             />
                         </div>
@@ -33,7 +37,7 @@ const serve = (props: Props) => {
                 <div className="serve-bg bg-codecs">
                     <div className="serve-row">
                         <div className="serve-round-image">
-                            <img src="codecs-round.webp" alt="codecs-round" />
+                            <img src={codecsRound} alt="codecs-round" />
                         </div>
                         <div className="serve-text-block">
                             <p className="serve-text__title">
@@ -64,10 +68,7 @@ const serve = (props: Props) => {
                             </ul>
                         </div>
                         <div className="serve-round-image">
-                            <img
-                                src="notebook-round.webp"
-                                alt="notebook-round"
-                            />
+                            <img src={notebookRound} alt="notebook-round" />
                         </div>
                     </div>
                 </div>
