@@ -1,3 +1,4 @@
+import { StyledEngineProvider } from '@mui/material'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import './App.scss'
@@ -10,7 +11,7 @@ import { Route, Routes } from 'react-router-dom'
 type Props = {}
 const App = () => {
     return (
-        <>
+        <StyledEngineProvider injectFirst>
             <Header />
             <Container>
                 <Routes>
@@ -21,7 +22,7 @@ const App = () => {
                 </Routes>
             </Container>
             <Footer />
-        </>
+        </StyledEngineProvider>
     )
 }
 export default App
