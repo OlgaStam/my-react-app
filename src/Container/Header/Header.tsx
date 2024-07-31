@@ -1,6 +1,7 @@
 import './Header.scss'
 import logo from '../../assets/logo.webp'
 import Menu from 'components/Menu/Menu'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 const Header = () => {
@@ -10,9 +11,9 @@ const Header = () => {
                 <div className="container">
                     <nav className="header-menu__container">
                         <div className="header-logo">
-                            <a className="header-logo__link" href="/">
+                            <Link className="header-logo__link" to="/">
                                 <img src={logo} />
-                            </a>
+                            </Link>
                         </div>
                         <Menu />
                     </nav>
