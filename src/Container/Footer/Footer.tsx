@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-logo">
                     <a className="cw" href=" /">
-                        <img src={logo} />
+                        <img src={logo} alt="logo" />
                         <span>Бухгалтерська агенція "ЛЕВ"</span>
                     </a>
                     <span>Наш супровід - Ваш спокій</span>
