@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Clear Sans Medium';
-    src: url('../../assets/clearsans_medium.ttf') format('truetype');
+    src: url('../../Assets/clearsans_medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -118,5 +118,5 @@ i {
 .form-control:focus {
     color: #468966;
     border-color: #468966;
-    box-shadow: 0 0 0 0.25rem #46896640
+    box-shadow: 0 0 0 0.25rem #46896640;
 }

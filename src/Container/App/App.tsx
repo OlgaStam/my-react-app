@@ -4,10 +4,10 @@ import Header from 'Container//Header/Header'
 import './App.scss'
 import Container from '@mui/material/Container'
 import { Route, Routes } from 'react-router-dom'
-import Home from 'pages/Home/Home'
-import Contact from 'pages/Contact/Contact'
-import Price from 'pages/Price/Price'
-import Serve from 'pages/Serve/Serve'
+import Home from 'Pages/Home/Home'
+import Contact from 'Pages/Contact/Contact'
+import Price from 'Pages/Price/Price'
+import Serve from 'Pages/Serve/Serve'
 const App = () => {
     return (
         <StyledEngineProvider injectFirst>

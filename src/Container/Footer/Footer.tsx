@@ -1,5 +1,5 @@
 import './Footer.scss'
-import logo from 'assets/logo.webp'
+import logo from 'Assets/logo.webp'
 
 const Footer = () => {
     return (
