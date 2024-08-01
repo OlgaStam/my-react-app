@@ -1,9 +1,6 @@
 import './Footer.scss'
-import logo from '../../assets/logo.webp'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
+import logo from 'assets/logo.webp'
 
-type Props = {}
 const Footer = () => {
     return (
         <footer className="footer lev-bg cw">
