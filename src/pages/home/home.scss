@@ -11,17 +11,14 @@
     font-size: 66px;
 }
 
-
 .lev-font-color {
     color: #468966 !important;
 }
-
 
 .title-main,
 .title-children {
     padding: 5% 0 0 5%;
 }
-
 
 .title-home {
     font-size: 100%;
@@ -86,8 +83,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    content: "";
-    background-color: #F2EFEB;
+    content: '';
+    background-color: #f2efeb;
     z-index: 20;
     opacity: 0.6;
 }
@@ -124,7 +121,7 @@
     text-align: center;
 }
 
-@media(max-width: 767.8px) {
+@media (max-width: 767.8px) {
     #home-fon {
         min-height: 7em;
         background-position: center;
