@@ -1,14 +1,13 @@
-import { StyledEngineProvider } from '@mui/material'
-import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
-import './App.scss'
-// import Home from 'Pages/Home/Home'
-import Home from 'Pages/Home/Home'
-import Container from '@mui/material/Container'
 import { Route, Routes } from 'react-router-dom'
+import { StyledEngineProvider } from '@mui/material'
+import Container from '@mui/material/Container'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+import Home from 'Pages/Home/Home'
 import Contact from 'Pages/Contact/Contact'
 import Price from 'Pages/Price/Price'
 import Serve from 'Pages/Serve/Serve'
+import './App.scss'
 // type Props = {}
 const App = () => {
     return (

@@ -12,7 +12,7 @@ const Header = () => {
                     <nav className="header-menu__container">
                         <div className="header-logo">
                             <Link className="header-logo__link" to="/">
-                                <img src={logo} />
+                                <img src={logo} alt="header-logo" />
                             </Link>
                         </div>
                         <Menu />
