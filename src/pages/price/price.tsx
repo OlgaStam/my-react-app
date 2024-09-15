@@ -1,4 +1,4 @@
-import './price.scss'
+import './Price.scss'
 import { Breadcrumbs, Container } from '@mui/material'
 
 type Props = {}

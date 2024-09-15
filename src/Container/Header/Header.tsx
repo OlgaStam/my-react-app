@@ -1,9 +1,9 @@
 import './Header.scss'
-import logo from '../../assets/logo.webp'
-import Menu from 'components/Menu/Menu'
+import logo from '../../Assets/logo.webp'
+import Menu from 'Components/Menu/Menu'
 import { Link } from 'react-router-dom'
 
-type Props = {}
+// type Props = {}
 const Header = () => {
     return (
         <header className="header">

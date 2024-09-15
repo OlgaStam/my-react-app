@@ -1,5 +1,5 @@
 import { Breadcrumbs, Container } from '@mui/material'
-import './contact.scss'
+import './Contact.scss'
 
 type Props = {}
 const contact = (props: Props) => {

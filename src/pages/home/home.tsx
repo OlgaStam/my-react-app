@@ -1,5 +1,5 @@
 import { Container } from '@mui/material'
-import './home.scss'
+import './Home.scss'
 type Props = {}
 const Home = (props: Props) => {
     return (

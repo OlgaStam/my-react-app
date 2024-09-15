@@ -1,8 +1,8 @@
 import { Breadcrumbs, Container } from '@mui/material'
 import './Serve.scss'
-import twoNotebookRound from '../../assets/two-notebooks-round.webp'
-import notebookRound from '../../assets/notebook-round.webp'
-import codecsRound from '../../assets/codecs-round.webp'
+import twoNotebookRound from '../../Assets/two-notebooks-round.webp'
+import notebookRound from '../../Assets/notebook-round.webp'
+import codecsRound from '../../Assets/codecs-round.webp'
 
 type Props = {}
 const serve = (props: Props) => {
