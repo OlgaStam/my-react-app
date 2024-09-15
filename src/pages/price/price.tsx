@@ -1,8 +1,8 @@
+import React from 'react'
 import './Price.scss'
 import { Breadcrumbs, Container } from '@mui/material'
 
-type Props = {}
-const price = (props: Props) => {
+const price = () => {
     return (
         <Container>
             <Breadcrumbs></Breadcrumbs>

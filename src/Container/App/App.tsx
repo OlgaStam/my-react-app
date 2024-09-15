@@ -8,6 +8,7 @@ import Contact from 'Pages/Contact/Contact'
 import Price from 'Pages/Price/Price'
 import Serve from 'Pages/Serve/Serve'
 import './App.scss'
+import React from 'react'
 // type Props = {}
 const App = () => {
     return (

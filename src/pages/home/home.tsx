@@ -1,7 +1,7 @@
 import { Container } from '@mui/material'
 import './Home.scss'
-type Props = {}
-const Home = (props: Props) => {
+import React from 'react'
+const Home = () => {
     return (
         <>
             <div id="home-fon" className="text-white fon-title">

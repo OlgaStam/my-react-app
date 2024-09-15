@@ -3,9 +3,9 @@ import './Serve.scss'
 import twoNotebookRound from '../../Assets/two-notebooks-round.webp'
 import notebookRound from '../../Assets/notebook-round.webp'
 import codecsRound from '../../Assets/codecs-round.webp'
+import React from 'react'
 
-type Props = {}
-const serve = (props: Props) => {
+const serve = () => {
     return (
         <Container>
             <Breadcrumbs></Breadcrumbs>

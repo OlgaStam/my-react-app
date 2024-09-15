@@ -1,7 +1,7 @@
+import React from 'react'
 import './Menu.scss'
 import MenuItem from './MenuItem'
-type Props = {}
-const Menu = (props: Props) => {
+const Menu = () => {
     return (
         /* <div className="header-navbar">
                             <div className="header-navbar__btn">

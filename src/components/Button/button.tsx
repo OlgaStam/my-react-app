@@ -1,5 +1,6 @@
-type Props = {}
-const button = (props: Props) => {
+import React from 'react'
+
+const button = () => {
     return (
         <div className="up-button__wrapper">
             <a href="" className="up-button">

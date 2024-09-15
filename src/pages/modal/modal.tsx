@@ -1,5 +1,4 @@
-type Props = {}
-const modal = (props: Props) => {
+const modal = () => {
     // TODO
     // return (
     //     <div className="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

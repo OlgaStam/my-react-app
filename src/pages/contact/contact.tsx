@@ -1,8 +1,8 @@
 import { Breadcrumbs, Container } from '@mui/material'
 import './Contact.scss'
+import React from 'react'
 
-type Props = {}
-const contact = (props: Props) => {
+const contact = () => {
     return (
         <Container>
             <Breadcrumbs></Breadcrumbs>
