@@ -1,5 +1,3 @@
-import { Route, Routes } from 'react-router-dom'
-import { StyledEngineProvider } from '@mui/material'
 import Container from '@mui/material/Container'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
@@ -7,9 +5,10 @@ import Contact from 'Pages/Contact/Contact'
 import Price from 'Pages/Price/Price'
 import Serve from 'Pages/Serve/Serve'
 import './App.scss'
-import React from 'react'
 import Home from 'Pages/Home/Home'
-// type Props = {}
+import { StyledEngineProvider } from '@mui/material'
+import { Routes, Route } from 'react-router-dom'
+import React from 'react'
 const App = () => {
     return (
         <StyledEngineProvider injectFirst>
