@@ -31,7 +31,10 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
+        "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+        "build:server": "tsc -p tsconfig.server.json",
+        "start:server": "npm run build:server && node dist/server.js",
+        "start:full": "npm run build && npm run start:server"
     },
     "eslintConfig": {
         "extends": [

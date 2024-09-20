@@ -5,13 +5,8 @@
       "@Components/*": ["Components/*"],
       "@Pages/*": ["Pages/*"]
     },
-    "target": "es5",
-
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es5",  // Для клиентского кода
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -27,6 +22,7 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src",            // Клиентский код
+    "server.ts"       // Серверный код
   ]
 }

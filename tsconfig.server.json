@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "es6",                       // Выбор стандарта ES6 для сервера
+      "module": "commonjs",                  // Использование CommonJS для Node.js
+      "outDir": "./dist",                    // Скомпилированный JS-код попадёт в папку dist
+      "rootDir": "./",                       // Указание корневой директории
+      "esModuleInterop": true,               // Для совместимости с модулями ES
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": ["server.ts"]                 // Компилируем только серверные файлы
+  }
+  
