@@ -1,6 +1,6 @@
 import React from 'react'
 import './Menu.scss'
-import MenuItem from './MenuItem'
+import MenuItem from '../../Components/Menu/MenuItem'
 const Menu = () => {
     return (
         /* <div className="header-navbar">
