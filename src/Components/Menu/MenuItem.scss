@@ -1,0 +1,12 @@
+.nav-link {
+    transition: 0.8s ease;
+    border-bottom: solid 3px transparent;
+    color: #468966;
+    font-size: 24px;
+    padding: 0;
+}
+
+.menu-item-active,
+.nav-link:hover {
+    border-bottom: solid 3px #468966;
+}
