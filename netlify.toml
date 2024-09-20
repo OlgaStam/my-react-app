@@ -1,2 +1,4 @@
 [build]
-  node_version = "21" # или версия, которую ты используешь локально
+  command = "npm run build"
+  publish = "build"
+  environment = { NODE_VERSION = "21.7.1" }
