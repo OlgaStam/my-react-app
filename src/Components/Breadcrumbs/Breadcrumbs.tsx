@@ -6,38 +6,51 @@ const AppBreadcrumbs: React.FC = () => {
     const location = useLocation()
     const pathnames = location.pathname.split('/').filter((x) => x)
 
-    return (
-        <Breadcrumbs aria-label="breadcrumb" className="container">
-            <Link
-                component={RouterLink}
-                to="/"
-                color="inherit"
-                style={{ textDecoration: 'none' }} // Убираем подчеркивание
-            >
-                {/* Использование Unicode символа домика */}
-                <span style={{ marginRight: 4 }}>🏠</span>
-                Головна
-            </Link>
-            {pathnames.map((name, index) => {
-                const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`
-                const isLast = index === pathnames.length - 1
+    const isHomePage = location.pathname === '/'
 
-                return isLast ? (
-                    <Typography key={routeTo} color="textPrimary">
-                        {name.charAt(0).toUpperCase() + name.slice(1)}
-                    </Typography>
-                ) : (
+    return (
+        <div>
+            {!isHomePage && (
+                <Breadcrumbs
+                    aria-label="breadcrumb"
+                    className="breadcrumb container"
+                >
                     <Link
-                        key={routeTo}
                         component={RouterLink}
-                        to={routeTo}
+                        to="/"
                         color="inherit"
+                        style={{ textDecoration: 'none' }}
                     >
-                        {name.charAt(0).toUpperCase() + name.slice(1)}
+                        <i
+                            className="fas fa-home"
+                            style={{ marginRight: 4 }}
+                        ></i>{' '}
+                        {/* Иконка домика */}
+                        Головна
                     </Link>
-                )
-            })}
-        </Breadcrumbs>
+                    {pathnames.map((name, index) => {
+                        const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`
+                        const isLast = index === pathnames.length - 1
+
+                        return isLast ? (
+                            <Typography key={routeTo} color="textPrimary">
+                                {name.charAt(0).toUpperCase() + name.slice(1)}
+                            </Typography>
+                        ) : (
+                            <Link
+                                key={routeTo}
+                                component={RouterLink}
+                                to={routeTo}
+                                color="inherit"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                {name.charAt(0).toUpperCase() + name.slice(1)}
+                            </Link>
+                        )
+                    })}
+                </Breadcrumbs>
+            )}
+        </div>
     )
 }
 
