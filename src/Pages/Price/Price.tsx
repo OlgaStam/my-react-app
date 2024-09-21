@@ -1,6 +1,6 @@
 import React from 'react'
 import './Price.scss'
-import { Breadcrumbs, Container } from '@mui/material'
+import { Container } from '@mui/material'
 
 const price = () => {
     return (
