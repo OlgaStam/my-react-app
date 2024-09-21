@@ -8,7 +8,13 @@
 body {
     font-family: 'Clear Sans Medium', sans-serif;
 }
-
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 header {
     margin-bottom: 120px;
 }
@@ -97,10 +103,12 @@ i {
     margin-top: 5px;
 }
 
-.breadcrumb {
-    padding-left: 20px;
+.pageTitle {
+    color: #468966;
+    border-bottom: 2px solid #468966; // Цвет нижней границы
+    padding-bottom: 16px; // Расстояние от текста до границы (опционально)
+    text-align: center;
 }
-
 .modal {
     top: 10%;
 }

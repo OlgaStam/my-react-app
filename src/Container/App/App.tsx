@@ -9,11 +9,14 @@ import Contact from '../../Pages/Contact/Contact'
 import Price from '../../Pages/Price/Price'
 import Serve from '../../Pages/Serve/Serve'
 import './App.scss'
+import AppBreadcrumbs from '../../Components/Breadcrumbs/Breadcrumbs'
 const App = () => {
     return (
         <StyledEngineProvider injectFirst>
             <Header />
             <Container>
+                {/* Хлебные крошки */}
+                <AppBreadcrumbs />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/Contact" element={<Contact />} />

@@ -8,7 +8,7 @@ import React from 'react'
 const serve = () => {
     return (
         <Container>
-            <Breadcrumbs></Breadcrumbs>
+            <h3 className="pageTitle">Послуги</h3>
             <div className="site-about lev-font-color">
                 <div className="serve-bg bg-two_notebooks">
                     <div className="serve-row">
