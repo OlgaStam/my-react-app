@@ -1,15 +1,8 @@
 // import { Breadcrumbs, Container, Link, Typography } from '@mui/material'
 import './Contact.scss'
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 
 const contact = () => {
-    const navigate = useNavigate()
-
-    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>): void => {
-        event.preventDefault() // Предотвращаем стандартное поведение ссылки
-        navigate('/') // Перенаправляем на главную страницу
-    }
     return (
         <>
             <h3 className="pageTitle">Контакти</h3>
