@@ -5,7 +5,7 @@ import { Breadcrumbs, Container } from '@mui/material'
 const price = () => {
     return (
         <Container>
-            <Breadcrumbs></Breadcrumbs>
+            <h3 className="pageTitle">Ціни</h3>
             <section className="padd">
                 <a className="price-card bg-calc" href="#group_1-2">
                     Для ФО-П на єдиному податку 1-2 група
