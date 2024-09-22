@@ -12,6 +12,8 @@ import Serve from '../../Pages/Serve/Serve'
 import './App.scss'
 import AppBreadcrumbs from '../../Components/Breadcrumbs/Breadcrumbs'
 import UpButton from '../../Components/UpButton/UpButton'
+const NotFound = () => <h1>404 - Страница не найдена</h1>
+
 const App = () => {
     return (
         <StyledEngineProvider injectFirst>
@@ -25,6 +27,8 @@ const App = () => {
                     <Route path="/Contact" element={<Contact />} />
                     <Route path="/Price" element={<Price />} />
                     <Route path="/Serve" element={<Serve />} />
+                    {/* Обработка 404 */}
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Container>
             <Footer />
