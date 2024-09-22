@@ -46,7 +46,12 @@
     background-color: white;
     color: #174b23;
 }
-
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
 .consulting-submit-button {
     margin-top: 10px;
 }

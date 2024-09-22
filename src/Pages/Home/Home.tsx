@@ -1,7 +1,13 @@
+import React, { useState } from 'react'
 import { Container } from '@mui/material'
 import './Home.scss'
-import React from 'react'
+import Modal from '../Modal/Modal'
+
 const Home = () => {
+    const [isModalOpen, setModalOpen] = useState(false)
+
+    const handleOpenModal = () => setModalOpen(true)
+    const handleCloseModal = () => setModalOpen(false)
     return (
         <>
             <div id="home-fon" className="text-white fon-title">
@@ -15,6 +21,7 @@ const Home = () => {
                     </div>
                     <div className="consultation-appointment">
                         <button
+                            onClick={handleOpenModal}
                             type="button"
                             id="w0"
                             className="btn btn-light modal-button-consulting"
@@ -55,6 +62,7 @@ const Home = () => {
                     </div>
                 </div>
             </Container>
+            <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
             <div className="content-block__bg">
                 <Container>
                     <div className="content-block__title">Нас обирають:</div>
