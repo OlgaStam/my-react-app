@@ -8,7 +8,6 @@ const breadcrumbNameMap: { [key: string]: string } = {
     '/Contact': 'Контакти',
     '/Price': 'Ціни',
     '/Serve': 'Послуги',
-    // Добавь сюда другие страницы
 }
 
 const AppBreadcrumbs: React.FC = () => {
@@ -18,12 +17,9 @@ const AppBreadcrumbs: React.FC = () => {
     const isHomePage = location.pathname === '/'
 
     return (
-        <div>
+        <div className="breadcrumb-container">
             {!isHomePage && (
-                <Breadcrumbs
-                    aria-label="breadcrumb"
-                    className="breadcrumb container"
-                >
+                <Breadcrumbs aria-label="breadcrumb" className="breadcrumb">
                     <Link
                         component={RouterLink}
                         to="/"

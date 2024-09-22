@@ -9,18 +9,18 @@ import Home from '../../Pages/Home/Home'
 import Contact from '../../Pages/Contact/Contact'
 import Price from '../../Pages/Price/Price'
 import Serve from '../../Pages/Serve/Serve'
-import './App.scss'
 import AppBreadcrumbs from '../../Components/Breadcrumbs/Breadcrumbs'
 import UpButton from '../../Components/UpButton/UpButton'
+import './App.scss'
 const NotFound = () => <h1>404 - Страница не найдена</h1>
 
 const App = () => {
     return (
         <StyledEngineProvider injectFirst>
             <Header />
+            {/* Хлебные крошки */}
+            <AppBreadcrumbs />
             <Container>
-                {/* Хлебные крошки */}
-                <AppBreadcrumbs />
                 <UpButton />
                 <Routes>
                     <Route path="/" element={<Home />} />

@@ -61,7 +61,6 @@
     display: flex;
     flex-direction: column;
 }
-
 .content-block {
     position: relative;
     display: flex;
@@ -71,6 +70,9 @@
     margin: 0 30px 60px 30px;
 }
 
+.choose {
+    flex-wrap: nowrap;
+}
 .content-block__bg {
     position: relative;
     background-image: url('second.webp');

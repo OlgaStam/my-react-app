@@ -66,7 +66,7 @@ const Home = () => {
             <div className="content-block__bg">
                 <Container>
                     <div className="content-block__title">Нас обирають:</div>
-                    <div className="content-block">
+                    <div className="content-block choose">
                         <div className="content-block__item">
                             <p className="content-block__item-header">
                                 Mалий та середній бізнес (ТОВ, ФОП)
