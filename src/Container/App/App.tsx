@@ -11,6 +11,7 @@ import Price from '../../Pages/Price/Price'
 import Serve from '../../Pages/Serve/Serve'
 import './App.scss'
 import AppBreadcrumbs from '../../Components/Breadcrumbs/Breadcrumbs'
+import UpButton from '../../Components/UpButton/UpButton'
 const App = () => {
     return (
         <StyledEngineProvider injectFirst>
@@ -18,6 +19,7 @@ const App = () => {
             <Container>
                 {/* Хлебные крошки */}
                 <AppBreadcrumbs />
+                <UpButton />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/Contact" element={<Contact />} />
