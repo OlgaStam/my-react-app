@@ -64,7 +64,7 @@ const Footer = () => {
 
                 <div className="footer-address">
                     <h2 className="footer-title">Адреса офісу</h2>
-                    <a href="/Сontact">
+                    <a href="/Contact">
                         <i className="fa-solid fa-location-dot"></i>
                         Харківська обл., смт Пісочин (с.Надточії), вул.Дачна 39
                     </a>
