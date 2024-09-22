@@ -6,7 +6,15 @@
     padding: 0;
 }
 
-.menu-item-active,
-.nav-link:hover {
+.menu-item-active {
     border-bottom: solid 3px #468966;
+}
+@media (max-width: 767.8px) {
+    .nav-link {
+        color: white !important; // Цвет ссылок в активном меню
+    }
+    .menu-item-active,
+    .nav-link:hover {
+        border-bottom: solid 3px white;
+    }
 }

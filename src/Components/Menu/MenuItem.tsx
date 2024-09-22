@@ -6,6 +6,7 @@ type Props = {
     to: string
     children: React.ReactNode
     className?: string
+    onClick?: () => void // Добавляем пропс onClick
 }
 
 const MenuItem = ({ to, children, className }: Props) => {

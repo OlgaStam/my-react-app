@@ -1,62 +1,63 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Menu.scss'
 import MenuItem from '../../Components/Menu/MenuItem'
+import { useLocation } from 'react-router-dom'
+
 const Menu = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    const location = useLocation()
+    const handleMenuToggle = () => {
+        setIsMenuOpen((prev) => !prev)
+    }
+
+    const handleMenuItemClick = () => {
+        setIsMenuOpen(false) // Закрываем меню при выборе пункта
+    }
+    useEffect(() => {
+        // Закрываем меню при изменении маршрута
+        setIsMenuOpen(false)
+    }, [location])
     return (
-        /* <div className="header-navbar">
-                            <div className="header-navbar__btn">
-                                <span className="header-navbar__btn-row"></span>
-                                <span className="header-navbar__btn-row"></span>
-                                <span className="header-navbar__btn-row"></span>
-                            </div>
-                            <ul className="header-navbar__list">
-                                <li className="nav-item">
-                                    <a href="" className="nav-link main">
-                                        Головна
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="" className="nav-link serve">
-                                        Послуги
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="" className="nav-link price">
-                                        Ціни
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="" className="nav-link contact">
-                                        Контакти
-                                    </a>
-                                </li>
-                            </ul>
-                            <a
-                                className="header-navbar__contacts"
-                                href="tel:+380986073304"
-                            >
-                                <span>Ми на зв'язку</span>
-                                <span>+38 (098) 607-33-04</span>
-                                <small>Пн.-Пт. з 09:00 до 18:00</small>
-                            </a>
-                        </div> */
         <div className="header-navbar">
-            <div className="header-navbar__btn">
-                <span />
-                <span />
-                <span />
+            <div
+                className={`header-navbar__btn ${isMenuOpen ? 'active' : ''}`}
+                onClick={handleMenuToggle}
+            >
+                <span className="header-navbar__btn" />
+                <span className="header-navbar__btn" />
+                <span className="header-navbar__btn" />
             </div>
-            <div className="header-navbar__list">
-                <MenuItem className="nav-link" to="/">
+
+            <div
+                className={`header-navbar__list ${isMenuOpen ? 'active' : ''}`}
+            >
+                <MenuItem
+                    className="nav-link"
+                    to="/"
+                    onClick={handleMenuItemClick}
+                >
                     Головна
                 </MenuItem>
-                <MenuItem className="nav-link" to="/Serve">
+                <MenuItem
+                    className="nav-link"
+                    to="/Serve"
+                    onClick={handleMenuItemClick}
+                >
                     Послуги
                 </MenuItem>
-                <MenuItem className="nav-link" to="/Price">
+                <MenuItem
+                    className="nav-link"
+                    to="/Price"
+                    onClick={handleMenuItemClick}
+                >
                     Ціни
                 </MenuItem>
-                <MenuItem className="nav-link" to="/Contact">
+                <MenuItem
+                    className="nav-link"
+                    to="/Contact"
+                    onClick={handleMenuItemClick}
+                >
                     Контакти
                 </MenuItem>
             </div>
@@ -68,4 +69,5 @@ const Menu = () => {
         </div>
     )
 }
+
 export default Menu
