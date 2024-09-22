@@ -109,14 +109,6 @@ i {
     padding-bottom: 16px; // Расстояние от текста до границы (опционально)
     text-align: center;
 }
-.modal {
-    top: 10%;
-}
-
-.modal-open {
-    overflow: scroll !important;
-    padding-right: 0 !important;
-}
 
 .form-control:focus {
     color: #468966;
