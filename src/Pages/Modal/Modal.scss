@@ -1,23 +1,22 @@
+.modal {
+    transform: none; /* Убираем анимацию */
+    opacity: 1; /* Полная видимость */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    pointer-events: auto; /* Включаем клики */
+    max-height: 90%; /* Ограничиваем высоту модального окна */
+    overflow-y: auto; /* Позволяем прокручивать содержимое, если оно больше */
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
-    z-index: 1000; /* Чтобы фон был под модалкой */
-}
-.modal {
-    z-index: 1001; /* Модалка выше фона */
-}
-.modal-content {
-    max-height: 90vh; /* Ограничиваем высоту модалки */
-    overflow-y: auto; /* Добавляем прокрутку по вертикали */
-}
-.modal-body {
-    padding: 10px; /* Добавьте отступы, если необходимо */
-}
-
-.modal-footer {
-    padding: 10px 80px; /* Отступы для нижней части */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
 }

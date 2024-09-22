@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './Modal.scss' // Импортируем стили из отдельного CSS-файла
+import './Modal.scss'
 
 interface FormData {
     name: string
@@ -20,6 +20,7 @@ const Modal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
     })
 
     const [errors, setErrors] = useState<{ [key: string]: string }>({})
+    const [isExiting, setIsExiting] = useState(false)
 
     useEffect(() => {
         if (isOpen) {
@@ -30,6 +31,7 @@ const Modal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
                 question: '',
             })
             setErrors({})
+            setIsExiting(false) // Сбрасываем состояние при открытии
         }
     }, [isOpen])
 
@@ -60,10 +62,18 @@ const Modal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
         const validationErrors = validateForm()
         if (Object.keys(validationErrors).length === 0) {
             console.log('Дані відправлені:', formData)
-            onClose() // Закрываем модал после отправки
+            handleClose() // Закрываем модал после отправки
         } else {
             setErrors(validationErrors)
         }
+    }
+
+    const handleClose = () => {
+        setIsExiting(true)
+        setTimeout(() => {
+            onClose()
+            setIsExiting(false) // Сброс состояния после закрытия
+        }, 500) // Длительность анимации
     }
 
     const validateForm = (fieldName?: string) => {
@@ -94,12 +104,8 @@ const Modal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
         <>
             {isOpen && <div className="modal-overlay" />}
             <div
-                className={`modal fade ${isOpen ? 'show' : ''}`}
-                style={{ display: isOpen ? 'block' : 'none' }}
-                tabIndex={-1}
-                role="dialog"
-                aria-labelledby="myModalLabel"
-                aria-hidden={!isOpen}
+                className={`modal ${isOpen ? 'show' : ''} ${isExiting ? 'fade-out' : ''}`}
+                style={{ display: isOpen || isExiting ? 'block' : 'none' }}
             >
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
@@ -206,7 +212,7 @@ const Modal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
                             <button
                                 type="button"
                                 className="btn btn-secondary close-modal"
-                                onClick={onClose}
+                                onClick={handleClose}
                             >
                                 Закрити
                             </button>
