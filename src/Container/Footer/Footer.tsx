@@ -19,13 +19,6 @@ const Footer = () => {
                         <i className="fa-solid fa-phone-volume"></i>
                         +38 (098) 607-33-04
                     </a>
-                    {/* <a className="phone cw" href="tel:+380986073304">
-                        <FontAwesomeIcon
-                            icon={faPhoneVolume}
-                            className="fa-solid"
-                        /> 
-                        +38 (098) 607-33-04
-                    </a> */}
                     <a
                         className="mail cw"
                         href="mailto:lev.buh.agency@gmail.com"
@@ -71,7 +64,7 @@ const Footer = () => {
 
                 <div className="footer-address">
                     <h2 className="footer-title">Адреса офісу</h2>
-                    <a href="/contact">
+                    <a href="/Сontact">
                         <i className="fa-solid fa-location-dot"></i>
                         Харківська обл., смт Пісочин (с.Надточії), вул.Дачна 39
                     </a>
