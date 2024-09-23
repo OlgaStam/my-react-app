@@ -1,14 +1,32 @@
 .modal {
-    transform: none; /* Убираем анимацию */
-    opacity: 1; /* Полная видимость */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 100;
-    pointer-events: auto; /* Включаем клики */
-    max-height: 90%; /* Ограничиваем высоту модального окна */
-    overflow-y: auto; /* Позволяем прокручивать содержимое, если оно больше */
+    width: 600px; // Фиксированная ширина
+    max-width: 90%; // Максимальная ширина для маленьких экранов
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    transition: opacity 0.15s linear;
+    height: fit-content; // Высота по содержимому
+    overflow: hidden; // Отключаем прокрутку
+
+    &.show {
+        display: block;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: space-between; // Размещаем кнопки по краям
+        padding: 10px;
+    }
 }
 
 .modal-overlay {
@@ -18,5 +36,29 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 99;
+    z-index: 1040;
+}
+
+.form-control:focus {
+    color: #468966;
+    border-color: #468966;
+    box-shadow: 0 0 0 0.25rem #46896640;
+}
+
+.has-error .form-control {
+    border-color: #a94442; /* Цвет границы при ошибке */
+}
+
+.text-danger {
+    color: #a94442 !important; /* Цвет текста ошибок */
+    font-size: 14px;
+}
+.form-control.is-valid {
+    background-color: #cce5ff; /* Цвет фона для корректно заполненного поля */
+}
+.control-label {
+    color: #468966;
+}
+.btn {
+    --bs-btn-padding-x: 4.5rem;
 }
