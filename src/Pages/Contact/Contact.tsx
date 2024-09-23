@@ -1,6 +1,6 @@
+import React from 'react'
 import useForm from '../../Components/UseForm/UseForm'
 import './Contact.scss'
-import React from 'react'
 
 const Contact = () => {
     const initialFormValues = {
@@ -12,11 +12,6 @@ const Contact = () => {
 
     useForm(initialFormValues)
 
-    // Указываем тип для параметра `data`
-    const onSubmit = (data: FormData) => {
-        console.log('Form Submitted:', data)
-        // Здесь можно добавить логику отправки данных на сервер
-    }
     return (
         <>
             <h3 className="pageTitle">Контакти</h3>

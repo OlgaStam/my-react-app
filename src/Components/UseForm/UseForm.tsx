@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { useState } from 'react'
 
 interface FormData {
@@ -8,7 +10,9 @@ interface FormData {
 }
 
 const useForm = (initialValues: FormData) => {
+    // eslint-disable-next-line no-unused-vars
     const [formData, setFormData] = useState<FormData>(initialValues)
+
     const [errors, setErrors] = useState<{ [key: string]: string }>({})
 
     const validateForm = (fieldName?: keyof FormData) => {
@@ -49,6 +53,7 @@ const useForm = (initialValues: FormData) => {
 
     const handleSubmit = (
         e: React.FormEvent<HTMLFormElement>,
+        // eslint-disable-next-line no-unused-vars
         onSubmit: (formData: FormData) => void
     ) => {
         e.preventDefault()
