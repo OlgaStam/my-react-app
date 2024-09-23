@@ -1,7 +1,23 @@
+import useForm from '../../Components/UseForm/UseForm'
 import './Contact.scss'
 import React from 'react'
 
-const contact = () => {
+const Contact = () => {
+    const initialFormValues = {
+        name: '',
+        email: '',
+        phone: '',
+        question: '',
+    }
+
+    const { formData, errors, handleChange, handleBlur, handleSubmit } =
+        useForm(initialFormValues)
+
+    // Указываем тип для параметра `data`
+    const onSubmit = (data: FormData) => {
+        console.log('Form Submitted:', data)
+        // Здесь можно добавить логику отправки данных на сервер
+    }
     return (
         <>
             <h3 className="pageTitle">Контакти</h3>
@@ -162,22 +178,8 @@ const contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="up-button__wrapper is_visible">
-                <a href="#" className="up-button">
-                    <svg width="29" height="29" viewBox="0 0 50 29" fill="none">
-                        <path
-                            className="up-button__path"
-                            d="M4.5 24.5L25 4L45.5 24.5"
-                            stroke="#545683"
-                            strokeWidth="4"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        ></path>
-                    </svg>
-                </a>
-            </div>
         </>
     )
 }
 
-export default contact
+export default Contact
