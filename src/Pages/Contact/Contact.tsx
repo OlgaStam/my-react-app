@@ -10,8 +10,7 @@ const Contact = () => {
         question: '',
     }
 
-    const { formData, errors, handleChange, handleBlur, handleSubmit } =
-        useForm(initialFormValues)
+    useForm(initialFormValues)
 
     // Указываем тип для параметра `data`
     const onSubmit = (data: FormData) => {

@@ -2,6 +2,13 @@ import React from 'react'
 import './Modal.scss'
 import useForm from '../../Components/UseForm/UseForm'
 
+// Определяем интерфейс для данных формы
+interface FormData {
+    name: string
+    email: string
+    phone: string
+    question: string
+}
 const Modal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
     isOpen,
     onClose,
@@ -25,7 +32,7 @@ const Modal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
         onClose()
     }
 
-    const onSubmit = (formData: any) => {
+    const onSubmit = (formData: FormData) => {
         console.log('Дані відправлені:', formData)
         handleClose()
     }
@@ -40,7 +47,6 @@ const Modal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
             >
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
-                        {/* <div className="modal-body"> */}
                         <form
                             className="modal-body"
                             onSubmit={(e) => handleSubmit(e, onSubmit)}
@@ -98,7 +104,6 @@ const Modal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
                     </div>
                 </div>
             </div>
-            {/* </div> */}
         </>
     )
 }
